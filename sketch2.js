@@ -6,8 +6,10 @@ function setup() {
   createCanvas(1000, 1000);
 }
 
-function mouseClicked(){
-  xSpeed = xSpeed * -1;
+function keyPressed() {
+  if(keyCode == UP_ARROW) {
+    xLocation = xLocation + 1;
+  }
 }
 
 function draw() {
