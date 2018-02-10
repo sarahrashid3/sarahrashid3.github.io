@@ -14,11 +14,13 @@ function keyPressed() {
 
 function draw() {
   //draw background
-  background(255);
+  background(255, 0, 0);
 
   // H, S & B integer values
   colorMode(HSB);
   fill(255, 204, 100, .5);
+  strokeWeight(4);
+  stroke(100, 50, 50);
 
   //draw circle
   ellipse(xPosition, 50, 100, 100);
