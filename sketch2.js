@@ -1,0 +1,26 @@
+var xPosition = 200;
+var yPosition = 200;
+var xSpeed = 1;
+
+function setup() {
+  createCanvas(1000, 1000);
+}
+
+function mouseClicked(){
+  xSpeed = xSpeed * -1;
+}
+
+function draw() {
+  //draw background
+  background(255);
+
+  // H, S & B integer values
+  colorMode(HSB);
+  fill(255, 204, 100, .5);
+
+  //draw circle
+  ellipse(xPosition, 50, 100, 100);
+
+  //update the x position
+  xPosition = xPosition + xSpeed;
+}
